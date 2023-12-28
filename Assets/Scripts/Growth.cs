@@ -6,7 +6,7 @@ public class Growth : MonoBehaviour
 
     private void Update()
     {
-        Vector3 newScale = transform.localScale + new Vector3(1f, 1f, 1f) * _speed * Time.deltaTime;
+        Vector3 newScale = transform.localScale + Vector3.one * _speed * Time.deltaTime;
 
         transform.localScale = newScale;
     }
